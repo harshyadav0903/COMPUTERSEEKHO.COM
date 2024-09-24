@@ -1,0 +1,19 @@
+/* ScrollingText.css */
+.scrolling-text-container {
+    overflow: hidden;
+  }
+  
+  .scrolling-text {
+    animation: scrollText 20s linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

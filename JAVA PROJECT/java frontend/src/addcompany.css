@@ -1,0 +1,44 @@
+/* AddCompany.css */
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .mb-3 {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+  }
+  
+  /* Additional styling for form controls */
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Optional: Style file input for consistency */
+  .form-control-file {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* You can add more custom styles as needed */
+  

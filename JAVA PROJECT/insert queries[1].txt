@@ -1,0 +1,335 @@
++-------------------+
+| Tables_in_group12 |
++-------------------+
+| age_group         |...
+| batch             |...
+| batch_info        |
+| closure           |...
+| company           |...
+| course            |...
+| course_duration   |...
+| designation       |...
+| enquiry           |
+| enquiry_source    |
+| follow_up         |
+| location          |
+| notification      |
+| payment           |
+| payment_info      |...
+| placement_data    |
+| placement_vacancy |
+| prn_generator     |
+| qualification     |
+| role              |...
+| staff             |...
+| student           |
++-------------------+
+____________________________________________________________________
+
+
+INSERT INTO age_group (age_group) VALUES
+('above 16'),
+('above 18'),
+('above 20');
+
+
+
+INSERT INTO batch (batch_logo, batch_name, batch_year, course_id, cover_photo, end_date, final_presentation_date, is_active, start_date) VALUES
+('Images\BatchwisePlacements\Bit.jpg', 'BIT EXPLORERS', '2022-01-01', 1, 'Images\BatchwisePlacements\Bit.jpg', '2022-06-30', '2022-07-15', 1, '2022-01-15'),
+
+('Images\BatchwisePlacements\Evengers.png', 'EVENGERS', '2022-02-01', 2, 'Images\BatchwisePlacements\Evengers.png', '2022-07-31', '2022-08-15', 0, '2022-02-15'),
+
+('Images\BatchwisePlacements\Spartan.png', 'SPARTAN', '2022-03-01', 1, 'Images\BatchwisePlacements\Spartan.png', '2022-08-31', '2022-09-15', 1, '2022-03-15');
+
+
+
+INSERT INTO closure (clousure_reason) VALUES
+('Admitted'),
+('Change of Career Path'),
+('Insufficient Prerequisites'),
+('Financial Constraints'),
+('Unavailable Scholarships'),
+('Limited Program Slots'),
+('Preferred Program Not Offered'),
+('Incompatibility with Personal Goals'),
+('Acceptance to Another Institution'),
+('Program Admission Requirements Not Met'),
+('Lack of Interest in Available Programs');
+
+
+
+
+INSERT INTO staff (contact_no, designation_id, email, experience, joining_date, location_id, name, password, photo, qualification_id, role_id, username) VALUES
+('8373847383', 1, 'sagar@gmail.com', '5 years', '2020-01-15', 1, 'Sagar Dhade', 'password123', 'sagar.jpg', 1, 1, 'sagar'),
+('7383474839', 2, 'nikhil@gmail.com', '3 years', '2019-07-20', 2, 'Nikhil Bahira', 'password123', 'jane_photo.jpg', 2, 2, 'nikhil');
+
+
+
+INSERT INTO company(company_id, total_placement, company_name, location, logo) VALUES
+(1, 20, "Reliance Jio", "Mumbai", "Images/Companies/4.png"),
+(2, 10, "ROLTA", "Pune", "Images/Companies/5.png"),
+(3, 15, "Tata Power", "Delhi", "Images/Companies/6.png"),
+(4, 5, "NeoSoft Technologies", "Banglore", "Images/Companies/7.png"),
+(5, 20, "infintus", "Mumbai", "Images/Companies/8.png"),
+(6, 5, "NSE", "Ahmedabad", "Images/Companies/9.png"),
+(7, 17, "C2L BIZ Solutions Pvt Ltd", "Pune", "Images/Companies/36.png"),
+(8, 9, "amdocs", "Ahmedabad", "Images/Companies/2.png"),
+(9, 25, "Atos Worldline", "Nashik", "Images/Companies/3.png"),
+(10, 24, "Concerto", "Banglore", "Images/Companies/15.png"),
+(11, 13, "3i Infotech", "Mumbai", "Images/Companies/16.png"),
+(12, 2, "intellect", "Delhi", "Images/Companies/17.png"),
+(13, 4, "InfrasoftTech", "Nashik", "Images/Companies/18.png"),
+(14, 30, "NPCI", "Mumbai", "Images/Companies/19.png"),
+(15, 20, "SmartStream", "Pune", "Images/Companies/20.png"),
+(16, 31, "tavisca", "Mumbai", "Images/Companies/21.png"),
+(17, 3, "Vara", "Ahmedabad", "Images/Companies/22.png"),
+(18, 27, "Prorigo", "Mumbai", "Images/Companies/23.png"),
+(19, 12, "OnMobile", "Pune", "Images/Companies/24.png"),
+(20, 2, "hopscotch.in", "Banglore", "Images/Companies/25.png"),
+(21, 20, "carwale", "Delhi", "Images/Companies/26.png"),
+(22, 7, "CCAvenue", "Mumbai", "Images/Companies/27.png"),
+(23, 20, "63 moons", "Banglore", "Images/Companies/28.png"),
+(24, 20, "Atos Consulting & Technology Services", "Mumbai", "Images/Companies/29.png"),
+(25, 16, "AutomationEdge", "Nashik", "Images/Companies/30.png"),
+(26, 19, "Altair", "Pune", "Images/Companies/31.png"),
+(27, 8, "BNP Paribas", "Nashik", "Images/Companies/32.png"),
+(28, 1, "mindstix", "Mumbai", "Images/Companies/33.png"),
+(29, 12, "L&T Technology Services", "Pune", "Images/Companies/34.png"),
+(30, 5, "simeio", "Banglore", "Images/Companies/35.png"),
+(31, 26, "Capgemini", "Ahmedabad", "Images/Companies/1.png"),
+(32, 10, "Sapiens", "Mumbai", "Images/Companies/10.png"),
+(33, 6, "Mobileum", "Pune", "Images/Companies/11.png"),
+(34, 23, "HOC", "Delhi", "Images/Companies/12.png"),
+(35, 5, "Financial Technologies", "Banglore", "Images/Companies/13.png"),
+(36, 8, "Cybage", "Mumbai", "Images/Companies/14.png");
+
+_________________
+
+INSERT INTO course (age_group_id, capacity, course_name, description, duration_id, is_active, photo, qualification_id, syllabus, video)
+VALUES
+(1, 120, 'PG_DAC', 'Learn the basics of programming', 1, 1, 'programming.jpg', 1, 'Introduction to Programming syllabus', 'programming_intro.mp4'),
+(2, 60, 'PG_DBDA', 'Explore the fundamentals of web development', 2, 1, 'web_dev.jpg', 2, 'Web Development Fundamentals syllabus', 'web_dev_fundamentals.mp4'),
+(3, 20, 'MSCIT', 'Discover the essentials of data science', 3, 1, 'data_science.jpg', 3, 'Data Science Essentials syllabus', 'data_science_essentials.mp4'),
+(3, 50, 'PRE_CAT', 'Discover the essentials of data science', 3, 1, 'data_science.jpg', 3, 'Data Science Essentials syllabus', 'data_science_essentials.mp4')
+;
+
+
+INSERT INTO course_duration (duration)
+VALUES
+('1 month'),
+('3 months'),
+('6 months'),
+('12 months');
+
+_________________
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9889695081', 1, '1992-01-01', 'example@example.com', 1,1000, 'Female', 1, 1, '/Images/AAFRIN ANSARI.png', 1, '2020-02-18', 'AAFRIN ANSARI', 120000);
+
+
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9882295021', 1, '1992-03-01', 'aaiman@example.com', 2,2000, 'Female', 2, 2, '/Images/AAIMAN MOMIN.png', 2, '2020-02-18', 'AAIMAN MOMIN', 119000);
+
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9882325021', 1, '1993-03-11', 'aayush@example.com', 2,1000, 'Male', 2, 2, '/Images/AAYUSH CHOUDHARY.png', 2, '2020-02-01', 'AAYUSH CHOUDHARY', 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  2, '9782325021', 1, '1991-06-11', 'abhijeet@example.com', 2,1000, 'Male', 2, 2, '/Images/ABHIJEET CHOUGULE.png', 2, '2020-02-01', 'ABHIJEET CHOUGULE', 120000);
+
+
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9282325033', 1, '1994-10-21', 'abhijeetnakha@example.com', 2,1000, 'Male', 1, 1, '/Images/ABHIJEET NAKHAREKAR.png', 2, '2020-02-01', 'ABHIJEET NAKHAREKAR' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9882325031', 1, '1992-10-21', 'adity@example.com', 1,1000, 'Male', 1, 2, '/Images/ADITYA TRIVEDI.png', 2, '2020-02-01', 'ADITYA TRIVEDI' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9882312209', 1, '1995-01-11', 'ajay@example.com', 1,1000, 'Male', 2, 1, '/Images/AJAY KODAG.png', 2, '2020-02-02', 'AJAY KODAG' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9883212210 ', 1, '1996-05-02', 'akash@example.com', 1,1000, 'Male', 1, 2, '/Images/AKASH DHAWALE.png', 2, '2020-02-03', 'AKASH DHAWALE' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9953212210 ', 1, '1996-05-02', 'akashkav@example.com', 1,1000, 'Male', 2, 2, '/Images/AKASH KAVADE.png', 2, '2020-02-03', 'AKASH KAVADE' , 120000);
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9303212210 ', 1, '1994-02-12', 'akashkpa@example.com', 1,1500, 'Male', 1, 2, '/Images/AKASH PATELIYA.png', 2, '2020-02-03', 'AKASH PATELIYA' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9883212236 ', 1, '1995-12-10', 'akashkwa1@example.com', 1,1000, 'Male', 1, 1, '/Images/AKASH WAKCHAURE.png', 2, '2020-02-03', 'AKASH WAKCHAURE' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9933212206 ', 1, '1994-11-23', 'akshay1@example.com', 1,1000, 'Male', 1, 1, '/Images/AKSHAY DHOLE.png', 2, '2020-02-01', 'AKSHAY DHOLE' , 120000);
+------------------------------
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9933211206 ', 1, '1996-10-13', 'aniket01@example.com', 1,1000, 'Male', 2, 1, '/Images/ANIKET KANERE.png', 2, '2020-02-02', 'ANIKET KANARE' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9333212216 ', 1, '1995-10-03', 'apurva@example.com', 1,1000, 'Male', 1, 2, '/Images/APURV SONAWANE.png', 2, '2020-02-01', 'APURV SONAWANE' , 120000);
+
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9893212210 ', 1, '1996-07-12', 'asmita@example.com', 1,1000, 'Female', 1, 1, '/Images/ASMITA PATIL.png', 2, '2020-02-03', 'ASMITA PATIL' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9023212264 ', 1, '1995-07-12', 'azja@example.com', 1,1000, 'Male', 1, 2, '/Images/AZHARUDDIN JALGAONKAR.png', 2, '2020-02-03', 'AZHARUDDIN JALGAONKAR' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9983212921 ', 1, '1993-05-14', 'bharatsingh@example.com', 1,1000, 'Male', 1, 1, '/Images/BHARATSINGH RATHORE.png', 2, '2020-02-01', 'BHARATSINGH RATHORE' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '8909212921 ', 1, '1996-10-09', 'chdubey@example.com', 1,1000, 'Female', 2, 1, '/Images/CHARU DUBEY.png', 1, '2020-02-02', 'CHARU DUBEY' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9956578115 ', 1, '1996-10-09', 'chetna@example.com', 1,1000, 'Female', 2, 1, '/Images/CHETNA BINEKAR.png', 1, '2020-02-01', 'CHETNA BINEKAR' , 120000);
+
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (2, '9856578025 ', 1, '1994-11-19', 'chetnaman@example.com', 1,1000, 'Female', 1, 2, '/Images/CHETNA MANDWADE.png', 1, '2020-02-03', 'CHETNA MANDWADE' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9956670025 ', 1, '1996-02-10', 'chinmay@example.com', 1,1000, 'Male', 2, 1, '/Images/CHINMAY GHOSALKAR.png', 2, '2020-02-01', 'CHINMAY GHOSALKAR' , 120000);
+
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9023679021 ', 1, '1994-03-12', 'deepalky@example.com', 1,1000, 'Male', 1, 2, '/Images/DEEPAK JAGTAP.png', 2, '2020-02-02', 'DEEPAK JAGTAP' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9956758225 ', 1, '1996-09-08', 'devendra@example.com', 1,1000, 'Male', 2, 2, '/Images/DEVENDRA WAGHULDE.png', 2, '2020-02-01', 'DEVENDRA WAGHULDE' , 120000);
+
+
+
+INSERT INTO student (batch_id, contact_no, course_id, date_of_birth, email, enquiry_id, fees_paid, gender, location_id, payment_id, photo, qualification_id, registration_date, student_name, total_fees)
+VALUES 
+  (1, '9806758221 ', 1, '1995-10-10', 'dhaval@example.com', 1,1500, 'Male', 1, 1, '/Images/DHAVAL BHADE.png', 1, '2020-02-01', 'DHAVAL BHADE' , 120000);
+
+
+INSERT INTO designation (designation)
+VALUES ('Software Engineer');
+
+INSERT INTO designation (designation)
+VALUES ('System Administrator');
+
+INSERT INTO designation (designation)
+VALUES ('Database Analyst');
+
+INSERT INTO designation (designation)
+VALUES ('Network Engineer');
+
+INSERT INTO designation (designation)
+VALUES ('IT Security Specialist');
+
+
+______________
+
+INSERT INTO role (role)
+VALUES ('Staff');
+
+INSERT INTO role (role)
+VALUES ('Admin');
+
+
+____________________
+
+
+INSERT INTO payment_info (payment_method_description)
+VALUES ('UPI');
+
+INSERT INTO payment_info (payment_method_description)
+VALUES ('Cash');
+
+INSERT INTO payment_info (payment_method_description)
+VALUES ('DD');
+
+INSERT INTO payment_info (payment_method_description)
+VALUES ('Cheque');
+
+
+______________________________
+
+
+INSERT INTO Location (city, country, landmark, pincode)
+VALUES ('Delhi', 'India', 'Connaught Place', '110001');
+
+INSERT INTO Location (city, country, landmark, pincode)
+VALUES ('Mumbai', 'India', 'Gateway of India', '400001');
+
+INSERT INTO Location (city, country, landmark, pincode)
+VALUES ('Bangalore', 'India', 'MG Road', '560001');
+
+INSERT INTO Location (city, country, landmark, pincode)
+VALUES ('Chennai', 'India', 'Marina Beach', '600001');
+
+INSERT INTO Location (city, country, landmark, pincode)
+VALUES ('Kolkata', 'India', 'Victoria Memorial', '700001');
+
+
+__________________________
+

@@ -1,0 +1,40 @@
+.image-gallery {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-item {
+    flex: 0 0 48%;
+    /* Adjust the percentage for the desired size */
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    /* Border color */
+    border-radius: 8px;
+    /* Border radius for rounded corners */
+    overflow: hidden;
+    /* Hide overflowing content within the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Remove default inline spacing */
+    border-bottom: 1px solid #ddd;
+    /* Border at the bottom of each image */
+}
+
+.image-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+    /* Add a slightly larger box shadow on hover */
+}

@@ -1,0 +1,6 @@
+@Computer_Seekho_HostAddress = http://localhost:5044
+
+GET {{Computer_Seekho_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

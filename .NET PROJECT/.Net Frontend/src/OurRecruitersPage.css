@@ -1,0 +1,46 @@
+/* OurRecruitersPage.css */
+
+.our-recruiters-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 logos in a row */
+    gap: 20px;
+  }
+  
+  .logo-card {
+    text-align: center;
+  }
+  
+  .company-logo {
+    max-width: 100%; /* Adjust the size as needed */
+    height: auto;
+  }
+  h2 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  .centered-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .centered-button button {
+    background-color: rgb(75, 75, 170);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .centered-button button:hover {
+    background-color: darkblue;
+  }
+  

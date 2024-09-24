@@ -1,0 +1,38 @@
+/* styles.css */
+
+.student-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.student-card {
+  width: 30%; /* Adjust the width to fit three cards in one row */
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-card img {
+  max-width: 100%;
+  max-height: 200px; /* Adjust the height as needed */
+  border-radius: 8px 8px 0 0;
+  align-self: center;
+}
+
+.student-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.student-info label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.student-info input {
+  width: 100%;
+  margin-bottom: 10px;
+}

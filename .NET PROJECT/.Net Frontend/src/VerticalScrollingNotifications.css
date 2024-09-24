@@ -1,0 +1,31 @@
+.vertical-scrolling-container {
+    overflow: hidden;
+    border: 1px solid #ddd; /* Optional: Add a border for styling */
+    border-radius: 8px;
+  }
+  
+  .scrolling-content {
+    animation: scrollAnimation 10s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .notification-message {
+    padding: 5px 8px 5px 5px; /* Adjust padding on the right side */
+    background-color: #f8f9fa;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }

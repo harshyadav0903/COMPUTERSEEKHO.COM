@@ -1,0 +1,49 @@
+/* addstudent.css */
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* You can add more custom styles as needed */
+  /* Add this CSS to your stylesheet or in a style tag in your HTML file */
+
+.gender-container {
+  display: flex;
+  align-items: center;
+}
+
+.gender-label {
+  margin-right: 10px;
+}
+
+.gender-radio {
+  margin-right: 5px;
+}

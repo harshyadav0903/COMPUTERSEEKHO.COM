@@ -1,0 +1,246 @@
+Student:-
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (1,'9890456578', 1, '2024-02-27', 'b@gmail.com', 1, 'male', 1, 98000, 'https://samples-files.com/samples/Images/jpg/1920-1080-sample.jpg', 1, '2024-02-27 11:18:57 AM', 'Bhushan', 980000, 1);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (2,'9876543210', 2, '2000-01-01', 'example@example.com', 2, 'female', 2, 75000, 'https://samples-files.com/samples/Images/jpg/1280-720-sample.jpg', 2, '2024-02-28 10:00:00 AM', 'John Doe', 750000, 2);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (3,'1234567890', 3, '1995-05-15', 'test@test.com', 3, 'female', 3, 85000, 'https://samples-files.com/samples/Images/jpg/800-600-sample.jpg', 3, '2024-03-01 09:30:00 AM', 'Alice Smith', 850000, 3);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (4,'9876543210', 4, '1998-09-20', 'user@example.com', 4, 'male', 4, 90000, 'https://samples-files.com/samples/Images/jpg/1024-768-sample.jpg', 4, '2024-03-02 08:45:00 AM', 'Emma Johnson', 900000, 4);
+
+INSERT INTO student(ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (5,'5551234567', 5, '2002-11-10', 'info@example.com', 5, 'female', 5, 80000, 'https://samples-files.com/samples/Images/jpg/640-480-sample.jpg', 5, '2024-03-03 12:15:00 PM', 'James Wilson', 800000, 5);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (6,'9876543210', 6, '1997-03-25', 'hello@example.com', 6, 'male', 6, 95000, 'https://samples-files.com/samples/Images/jpg/320-240-sample.jpg', 6, '2024-03-04 11:00:00 AM', 'Olivia Brown', 950000, 6);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (7,'1234567890', 7, '2000-07-05', 'world@example.com', 7, 'female', 7, 70000, 'https://samples-files.com/samples/Images/jpg/160-120-sample.jpg', 7, '2024-03-05 02:30:00 PM', 'William Jones', 700000, 7);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (8,'5551234567', 8, '1996-12-15', 'universe@example.com', 8, 'male', 8, 85000, 'https://samples-files.com/samples/Images/jpg/640-480-sample.jpg', 8, '2024-03-06 03:45:00 PM', 'Sophia Miller', 850000, 8);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (9,'5551234567', 9, '1999-08-20', 'hello@example.com', 9, 'female', 9, 80000, 'https://samples-files.com/samples/Images/jpg/1024-768-sample.jpg', 9, '2024-03-07 09:30:00 AM', 'Daniel Taylor', 800000, 9);
+
+INSERT INTO student(BatchId,ContactNo, CourseId, DateOfBirth, Email, EnquiryId, Gender, LocationId, PaymentId, Photo, QualificationId, RegistrationDate, StudentName, TotalFees, Pid)
+VALUES (10,'1234567890', 10, '1994-04-25', 'test@example.com', 10, 'male', 10, 95000, 'https://samples-files.com/samples/Images/jpg/800-600-sample.jpg', 10, '2024-03-08 10:45:00 AM', 'Isabella Anderson', 950000, 10);
+
+
+--------------------------------------------------------------------------------------------------------------------
+Staff:-
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('1234567890', 1, '5 years', '2022-01-01', 1, 'Prisha Mane', 'https://example.com/photo1.jpg', 1, 'PrishaMane', 'Prisha@gmail.com', 'password123', 1);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('9876543210', 2, '3 years', '2022-02-15', 2, 'Ketki Archarya', 'https://example.com/photo2.jpg', 2, 'KetkiArcharya', 'Ketki@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('5551234567', 3, '8 years', '2022-03-20', 3, 'Pooja Magan', 'https://example.com/photo3.jpg', 3, 'PoojaMagan', 'Pooja@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('7890123456', 1, '4 years', '2022-04-10', 1, 'Meghana Solanki', 'https://example.com/photo4.jpg', 1, 'MeghanaSolanki', 'Meghana@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('2345678901', 2, '6 years', '2022-05-05', 2, 'Bhumi ', 'https://example.com/photo5.jpg', 2, 'Bhumi', 'Bhumi@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('8901234567', 3, '10 years', '2022-06-18', 3, 'Snehal Jadhav', 'https://example.com/photo6.jpg', 3, 'SnehalJadhav', 'Snehal@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('6789012345', 1, '7 years', '2022-07-25', 1, 'Manahor Gurav', 'https://example.com/photo7.jpg', 1, 'ManahorGurav', 'Manahor@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('4567890123', 2, '9 years', '2022-08-30', 2, 'Shailesh', 'https://example.com/photo8.jpg', 2, 'Shailesh', 'Shailesh@gmail.com', 'password123', 2);
+
+INSERT INTO staff (ContactNo, DesignationId, Experience, JoiningDate, LocationId, Name, Photo, QualificationId, Username, Email, Password, RoleId) 
+VALUES ('9012345678', 3, '12 years', '2022-09-12', 3, 'Sunil', 'https://example.com/photo9.jpg', 3, 'Sunil', 'Sunil@gmail.com', 'password123', 2);
+
+---------------------------------------------------------------------------------------------------------------
+Role:-
+
+Done
+
+INSERT INTO Role(RoleName) VALUES ('Admin');
+INSERT INTO Role(RoleName) VALUES ('Staff');
+
+------------------------------------------------------------------------------------------------------------------
+
+Qualification:-
+
+INSERT INTO Qualification(QualificationName) VALUES ('Bachelor of Science');
+INSERT INTO Qualification(QualificationName) VALUES ('Bachelor of Arts');
+INSERT INTO Qualification(QualificationName) VALUES ('Master of Science');
+INSERT INTO Qualification(QualificationName) VALUES ('Master of Business Administration');
+INSERT INTO Qualification(QualificationName) VALUES ('Doctor of Philosophy');
+INSERT INTO Qualification(QualificationName) VALUES ('Bachelor of Engineering');
+INSERT INTO Qualification(QualificationName) VALUES ('Master of Engineering');
+INSERT INTO Qualification(QualificationName) VALUES ('Bachelor of Commerce');
+INSERT INTO Qualification(QualificationName) VALUES ('Master of Commerce');
+INSERT INTO Qualification(QualificationName) VALUES ('Associate Degree');
+
+--------------------------------------------------------------------------------------------------------------------
+PRN:-
+
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN001', 1, 1);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN002', 2, 2);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN003', 1, 3);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN004', 2, 4);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN005', 1, 5);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN006', 2, 6);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN007', 2, 7);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN008', 1, 8);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN009', 1, 9);
+INSERT INTO Prn(Prn_id, Course_id, StudentId) VALUES ('PRN010', 2, 10);
+
+------------------------------------------------------------------------------------------------------------------
+placement vacancy:-
+
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (1, 'Jhansi', 5);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (2, 'delhi', 8);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (3, 'Jalgaon', 10);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (4, 'Nashik', 3);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (5, 'Pune', 6);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (6, 'Chennai', 4);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (7, 'Sambhaji Nagar', 7);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (8, 'Shirpur', 9);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (9, 'Mumbai', 12);
+INSERT INTO PlacementVacancy(CompanyId, Location, Vacancy) VALUES (10, 'UK', 15);
+
+-------------------------------------------------------------------------------------------------------------------
+placementData:-
+
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (1, 1, 'Software Engineer', 'https://example.com/photo1.jpg', 1, 'PRN001', 'Confirmed');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (2, 2, 'Data Analyst', 'https://example.com/photo2.jpg', 2, 'PRN002', 'Confirmed');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (3, 3, 'Software Tester', 'https://example.com/photo3.jpg', 3, 'PRN003', 'Pending');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (4, 4, 'Python Developer', 'https://example.com/photo4.jpg', 4, 'PRN004', 'Confirmed');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (5, 5, 'Web Developer', 'https://example.com/photo5.jpg', 5, 'PRN005', 'Pending');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (6, 6, 'Software Developer', 'https://example.com/photo6.jpg', 6, 'PRN006', 'Confirmed');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (7, 7, 'UX/UI Designer', 'https://example.com/photo7.jpg', 7, 'PRN007', 'Pending');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (8, 8, 'Network Engineer', 'https://example.com/photo8.jpg', 8, 'PRN008', 'Confirmed');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (9, 9, 'Full Stack Developer', 'https://example.com/photo9.jpg', 9, 'PRN009', 'Pending');
+INSERT INTO PlacementData (Batchid, Companyid, Designation, Photourl, Placementvacancyid, Prnid, Status) VALUES (10, 10, 'DevOps Developer', 'https://example.com/photo10.jpg', 10, 'PRN010', 'Confirmed');
+
+------------------------------------------------------------------------------------------------------------------
+
+paymentinfo:-
+
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('Credit Card');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('Debit Card');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('Cash');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('Cheque');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('DD');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('cash');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('UPI');
+INSERT INTO Paymentinfo (Payment_method_Description) VALUES ('NEFT');
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+payment:-
+
+Done
+
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (1, 'TRX001', '2024-02-01', 130000, 1, 7);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (2, 'TRX002', '2024-02-05', 110000, 2, 6);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (3, 'TRX003', '2024-02-10', 130000, 3, 2);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (4, 'TRX004', '2024-02-15', 110000, 4, 4);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (5, 'TRX005', '2024-02-20', 130000, 5, 3);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (6, 'TRX006', '2024-02-25', 110000, 6, 8);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (7, 'TRX007', '2024-03-01', 130000, 7, 4);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (8, 'TRX008', '2024-03-05', 110000, 8, 5);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (9, 'TRX009', '2024-03-10', 130000, 9, 1);
+INSERT INTO Payment (StudentId, Transaction_Id, Date, Amount, Batch_Id, PaymentTypeId) VALUES (10, 'TRX010', '2024-03-15', 130000, 10, 2);
+
+--------------------------------------------------------------------------------------------------------------------
+
+Location:-
+
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Mumbai', 'India', 'Gateway of India', '400001');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Delhi', 'India', 'Red Fort', '110006');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Jaipur', 'India', 'Hawa Mahal', '302002');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Agra', 'India', 'Taj Mahal', '282001');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Kolkata', 'India', 'Victoria Memorial', '700071');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Chennai', 'India', 'Marina Beach', '600005');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Bangalore', 'India', 'Lalbagh Botanical Garden', '560004');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Hyderabad', 'India', 'Charminar', '500002');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Pune', 'India', 'Shaniwar Wada', '411030');
+INSERT INTO Location (City, Country, Landmark, Pincode) VALUES ('Ahmedabad', 'India', 'Sabarmati Ashram', '380027');
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+followup:-
+
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (1, 1, 1, '2024-02-01 08:00:00', 'Follow-up message 1', 1);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (2, 2, 2, '2024-02-05 09:00:00', 'Follow-up message 2', 2);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (3, 3, 3, '2024-02-10 10:00:00', 'Follow-up message 3', 3);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (2, 4, 4, '2024-02-15 11:00:00', 'Follow-up message 4', 4);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (1, 5, 5, '2024-02-20 12:00:00', 'Follow-up message 5', 5);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (3, 6, 6, '2024-02-25 13:00:00', 'Follow-up message 6', 6);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (1, 7, 7, '2024-03-01 14:00:00', 'Follow-up message 7', 7);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (2, 8, 8, '2024-03-05 15:00:00', 'Follow-up message 8', 8);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (3, 9, 9, '2024-03-10 16:00:00', 'Follow-up message 9', 9);
+INSERT INTO Followup (Attempts, ClosureId, EnquiryId, FollowUpDate, FollowUpMessage, StaffId) VALUES (1, 10, 10, '2024-03-15 17:00:00', 'Follow-up message 10', 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
